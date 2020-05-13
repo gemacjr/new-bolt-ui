@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     request(
         {
             method: 'POST',
-            uri: `${config.issuer}/oauth2/default/v1/token`,
+            uri: `${config.issuer}/token`,
             form : {
                 'client_id': config.clientID,
                 'client_secret': config.clientSecret,
